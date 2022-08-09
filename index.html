@@ -7,6 +7,7 @@
     <title>GIT HW 2</title>
 </head>
 <body>
+
   <p>Напишите в первый input вашу зарплату, а на второй желаемую сумму</p>
   <div id="task10-container">
     <input type="number" id="task10-input-zp">
@@ -14,6 +15,35 @@
     <button onclick="task10()">Task 10</button>
     <div id="task10-result"></div>
   </div>
+  
+    <div class="grid-container">
+        <div class="grid-block">
+            <strong>1. Высчитать дату Орозо Айт и Курман Айт.</strong>
+            <ol>
+                <li>Курман Айт это дата Орозо Айта плюс 70 дней.</li>
+                <li>
+                    Орозо Айт в среднем каждый год сдвигается на 10 дней ранее. Например
+                    если в этом году это 2 мая то в 2023 - 23 марта в 2024 - 13 марта
+                </li>
+                <li>
+                    В input вводится год например: 2010, 2023, 2030. Валидные цифры это от
+                    2000 до 2050 года. Остальные свалидируйте как неверные данные.
+                </li>
+                <li>За точку отчета брать известную дату Орозо Айта прошлого года.</li>
+                <li>Не брать в расчет свдиги лунных календарей и т.д. т.п.</li>
+                <li>Использовать object Date для подсчета дат.</li>
+            </ol>
+            <div class="input-container">
+                <div class="input">
+                  <input id="inputYear" type="text" />
+                  <button id="btnOrozo" onclick="calcDate()">Проверить год</button>
+                </div>
+                <div id="result" class="result-container"></div>
+              </div>
+            <div id="dataOrozo"></div>
+        </div>
+    </div>
+
    <div>
       <h2> 1. Высчитать дату Орозай Айт и Курман Айт. </h2>
         <ul>
@@ -38,6 +68,8 @@
     <script src="/js/question1.js"></script>
     <script src="/Dias-Team/js/question3.js"></script>
     <script src="/Dias-Team/js/question10.js"></script>
+    <script src="/js/orozo.js"></script>
+
 
 </body>
 </html>
