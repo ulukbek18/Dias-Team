@@ -1,4 +1,4 @@
-const btnOrozo = document.getElementById("btn");
+const btn = document.getElementById("btnOrozo");
 let result = document.getElementById('dataOrozo')
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
@@ -7,7 +7,7 @@ function calcDate() {
   let year = orInitPt.getFullYear();
   let month = orInitPt.getMonth();
   let day = orInitPt.getDate();
-  inputValue = document.getElementById("inputYear").value;
+  let inputValue = document.getElementById("inputYear").value;
 
   if ((inputValue < 2000 || inputValue > 2050) || isNaN(inputValue)) {
     document.getElementById("dataOrozo").style.color = 'red';
@@ -33,7 +33,7 @@ function calcDate() {
   }
 }
 
-btnOrozo.addEventListener("click", function handleClick(event) {
+btn.addEventListener("click", function handleClick(event) {
   event.preventDefault();
   const input = document.getElementById("inputYear");
   input.value = "";

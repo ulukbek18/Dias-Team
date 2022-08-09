@@ -1,0 +1,9 @@
+.grid-container {
+  margin-top: 20px;
+  height: 30vh;
+  border: 1px solid black;
+}
+
+.grid-block {
+  margin: 15px;
+}
